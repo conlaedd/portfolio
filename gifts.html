@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+    <title>Gifts</title>
+    <link rel="stylesheet" href="css/gifts.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    
+    <style>html{background-color: #F1FAEE;}</style>
+</head>
+    
+    
+    
+    <body>
+        <header>
+    <div id="heroImg">
+        <h1>Astronomy Ireland</h1>
+        </div>
+        
+<nav>
+    <a href="index.html"><img src="images/icon.png" alt="logo" class = "logo" width="30"></a>
+<!--
+    <a href=#menu id="hamburger"><img src="images/hamburger.png" alt="menu" width="30" height="30"></a>
+    <p id=l1 class="menu"><a href="index.html">Home</a></p>
+    <p id=l2 class="menu"><a href="gallery.html">Gallery</a></p>
+    <p id=l3 class="menu"><a href="gifts.html">Gifts</a></p>
+    <p id=l4 class="menu"><a href="classes.html">Classes</a></p>
+    <p id=l5 class="menu"><a href="validation.html">Validation</a></p>
+    <p id=l6 class="menu"><a href="style.html">Style</a></p>
+    <p id=l7 class="menu"><a href="contact.html">Contact Us</a></p>
+    <div id="dropDown">
+        <p><a href="index.html">Home</a></p>
+        <p><a href="gallery.html">Gallery</a></p>
+        <p><a href="gifts.html">Gifts</a></p>
+        <p><a href="classes.html">Classes</a></p>
+        <p><a href="validation.html">Validation</a></p>
+        <p><a href="style.html">Style</a></p>
+        <p><a href="contact.html">Contact Us</a></p>
+    </div>
+-->
+</nav>
+    </header>
+<h2>Unique Gifts for Any Occasion</h2>
+    <section id="mainSec">
+        <img src="images/giftsLarge.png" alt="logo" width="500" id="giftImg">
+        <h3 style="grid-column: 1/7;">Want to give someone a truly unique gift? You have come to the right place!</h3>
+        <h4 style="grid-column: 1/7;">Treat yourself or a loved one to something special from Astronomy Ireland.</h4>
+        <img src="images/gifts/magazine1.png" alt="Astonomy Ireland Magazine" width="220" height="360" id="mag1">
+        <img src="images/gifts/magazine2.png" alt="Astonomy Ireland Magazine" width="220" height="360" id="mag2">
+        <img src="images/gifts/magazine3.png" alt="Astonomy Ireland Magazine" width="220" height="360" id="mag3">
+        <!--Magazine covers taken from https://astronomy.ie/gifts/-->
+        <h2 style="grid-column: 1/7;">Memberships! The Gift that Keeps on Giving</h2>
+        <!--Types of Gifts-->
+        <div class="card" id="seasonTicket">
+        <h3>Season Ticket</h3>
+        <img src="images/gifts/seasonTicket.png" alt="Professor at a Ted talk" width="260" height="260" id="season">
+        <p>Get a season ticket entitling you or a loved one to all of our highly acclaimed lectures for a year</p>
+            </div>
+        <div class="card" id="giftClass">
+        <h3>Season Ticket</h3>
+        <img src="images/gifts/giftClass.png" alt="Professor at a Ted talk" width="260" height="260" id="classGift">
+        <p>No commitments! Allow THEM to see how much they'll love these classes. Beginners welcome!</p>
+            </div>
+    </section>
+    <footer>
+        <a href="index.html" id="footerImg"><img src="images/icon.png" alt="logo" width="70"></a>
+        
+        <p id=footerEmail>admin@astronomy.ie</p>
+        <p id="copy">© 2020 ASTRONOMY IRELAND</p>
+        <div id=socialMeds>
+            
+        <p id=insta2 class=socmed2><a href="https://www.instagram.com/astronomyie/"><img src="images/SocMed/insta.png" alt="instagram" width="40" height="40"></a></p>
+            
+        <p id=facebook2 class=socmed2><a href="https://www.facebook.com/groups/53321612786/"><img src="images/SocMed/facebook.png" alt="instagram" width="40" height="40"></a></p>
+            
+        <p id=twitter2 class=socmed2><a href="https://twitter.com/AstronomyIRL"><img src="images/SocMed/twitter.png" alt="instagram" width="40" height="40"></a></p>
+        
+        </div>
+        
+    </footer>
+        <script>
+//colour change
+    document.getElementById("colour1").addEventListener("mouseover",changeColour);
+    document.getElementById("colour2").addEventListener("mouseover",changeColour);
+    document.getElementById("colour3").addEventListener("mouseover",changeColour);
+    document.getElementById("colour4").addEventListener("mouseover",changeColour);
+    
+    document.getElementById("colour1").addEventListener("mouseout",revertColour);
+    document.getElementById("colour2").addEventListener("mouseout",revertColour);
+    document.getElementById("colour3").addEventListener("mouseout",revertColour);
+    document.getElementById("colour4").addEventListener("mouseout",revertColour);
+    
+    function changeColour(){
+    if(this.id=="colour1"){
+        document.getElementById("colour1").style.backgroundColor = "#A8DADC";
+        document.getElementById("colour2").style.backgroundColor = "#A8DADC";
+        document.getElementById("colour3").style.backgroundColor = "#A8DADC";
+        document.getElementById("colour4").style.backgroundColor = "#A8DADC";
+    }
+        if(this.id=="colour2"){
+        document.getElementById("colour1").style.backgroundColor = "#F1FAEE";
+        document.getElementById("colour2").style.backgroundColor = "#F1FAEE";
+        document.getElementById("colour3").style.backgroundColor = "#F1FAEE";
+        document.getElementById("colour4").style.backgroundColor = "#F1FAEE";
+    }
+        if(this.id=="colour3"){
+        document.getElementById("colour1").style.backgroundColor = "#E63946";
+        document.getElementById("colour2").style.backgroundColor = "#E63946";
+        document.getElementById("colour3").style.backgroundColor = "#E63946";
+        document.getElementById("colour4").style.backgroundColor = "#E63946";
+    }
+        if(this.id=="colour4"){
+        document.getElementById("colour1").style.backgroundColor = "#457B9D";
+        document.getElementById("colour2").style.backgroundColor = "#457B9D";
+        document.getElementById("colour3").style.backgroundColor = "#457B9D";
+        document.getElementById("colour4").style.backgroundColor = "#457B9D";
+    }
+    }
+    
+    function revertColour(){
+        document.getElementById("colour1").style.backgroundColor = "#A8DADC";
+        document.getElementById("colour2").style.backgroundColor = "#F1FAEE";
+        document.getElementById("colour3").style.backgroundColor = "#E63946";
+        document.getElementById("colour4").style.backgroundColor = "#457B9D";
+    }
+</script>
+        
+        <script>
+            //Clicking the hamburger menu
+    let menuSwitch = 1;
+        if(window.innerWidth<590){
+        let menuSwitch = 0;}else{
+            menuSwitch = 1;
+            document.getElementById("dropDown").style.display = "inline";
+            //alert("working");
+        }
+        document.getElementById("dropDown").style.display ="none";
+        function menuToggle(){
+            if (menuSwitch==0){
+                menuSwitch=1;
+                document.getElementById("dropDown").style.display = "inline";
+                document.getElementById("giftImg").style.marginTop = "11em";
+               // console.log(menuSwitch);
+            }else{
+                if(window.innerWidth<590){
+                menuSwitch=0;
+                document.getElementById("dropDown").style.display = "none";
+                    document.getElementById("giftImg").style.marginTop = "0em";
+                //console.log(window.innerWidth);
+                }
+            }
+        }
+    document.getElementById("hamburger").onclick  = function(){menuToggle()};
+    </script>
+    </body>
+</html>
+
+
+
+    
