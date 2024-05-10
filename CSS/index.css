@@ -190,17 +190,18 @@
         #trio {
             display: grid;
             grid-template-columns: 50% 50%;
-            margin: 5em;
+            margin: 0em;
             grid-row-gap: 2em;
         }
 
-        #trio p {
-            margin: 3em;
-        }
+        
 
-        @media screen and (max-width: 1350px) {
+        @media screen and (min-width: 1200px) {
 
             /*Tablet*/
+            #trio p {
+            margin: 3em;
+        }
             .textR {
                 padding-left: 5em;
                 /*                background-color: aqua*/
@@ -208,10 +209,18 @@
         }
 
         @media screen and (max-width: 1200px) {
-
+            #trio {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            margin: 4em;
+            grid-row-gap: 2em;
+        }
             /*Tablet*/
+            #trio p {
+            margin: 1em;
+        }
             .textR {
-                padding-left: 7em;
+                padding-left: 0em;
                 /*                background-color: aqua*/
             }
         }
