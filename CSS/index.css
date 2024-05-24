@@ -248,6 +248,14 @@
 
         @media screen and (max-width: 800px) {
 
+            h3 {
+                padding-left: 0em;
+            }
+
+            iframe {
+                padding-left: 0em;
+                padding-bottom: 2em;
+            }
 
             /*Phone*/
             #trio {
