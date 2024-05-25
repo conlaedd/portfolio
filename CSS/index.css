@@ -255,6 +255,7 @@
             iframe {
                 padding-left: 0em;
                 padding-bottom: 2em;
+                max-width: 100%;
             }
 
             /*Phone*/
